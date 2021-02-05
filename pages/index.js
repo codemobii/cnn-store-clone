@@ -1,65 +1,290 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from "react";
+import Layout from "../components/layout";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+    <Layout title="CNN STORE" isHome={true}>
+      <div className="cnn_major-container">
+        <section className="cnn_section-container">
+          <div className="cnn_section-title">
+            <p>Featured Collections</p>
+          </div>
+          <div className="cnn_grid-three">
+            <a href="#" className="cnn_featured-img">
+              <img
+                src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                alt=""
+              />
+            </a>
+            <a href="#" className="cnn_featured-img">
+              <img
+                src="https://cdnp2.stackassets.com/b6786304350f52d9e49ff0d72b53b108bf2c0ff6/store/opt/360/270/30481850281911ac250891500f23abb2671088e36619ed00e6f67154bf57/collections_mainframe_online-courses+%281%29.jpg"
+                alt=""
+              />
+            </a>
+            <a href="#" className="cnn_featured-img">
+              <img
+                src="https://cdnp0.stackassets.com/e6399daca80f33cd5e6591cadc9b0d6feb090477/store/opt/360/270/37f2b1b06687d3832a58647d4d00510e7a0011e9d18b350822b5b233a312/collections_mainframe_lifestyle.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+        </section>
+        <section className="cnn_section-container">
+          <div className="cnn_section-title">
+            <p>Best Sellers</p>
+          </div>
+          <div className="cnn_grid-four">
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className="cnn_section-container">
+          <div className="cnn_section-title">
+            <p>Ending soon</p>
+          </div>
+          <div className="cnn_grid-four">
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="cnn_pro-card">
+              <a href="#">
+                <div className="pro_card-imgcont">
+                  <img
+                    src="https://cdnp3.stackassets.com/7932404bf90c3e54c7999ec9d7d8edff71c0f360/store/opt/360/270/2ecc1ca996b7138a3db234612e69568075382186331b7547b1046ff4ad43/Collections_mainframe_gear-and-gadgets+%281%29.jpg"
+                    alt=""
+                  />
+                  <div className="pro_card-overlay">Get it for 98% off</div>
+                </div>
+                <div className="pro_card-info">
+                  <div className="card_info-title">
+                    Apple Magic Mouse 2 Bluetooth Rechargeable - Silver
+                    (Certified Refurbished)
+                  </div>
+                  <div className="card_info-price">
+                    $198 <span>$198</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </Layout>
+  );
 }

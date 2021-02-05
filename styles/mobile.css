@@ -1,0 +1,130 @@
+@media only screen and (max-width: 1024px) {
+  .menuIsToggled {
+    margin-left: 300px;
+  }
+  /* Hide somethings */
+  .cnn_header-top,
+  .cnn_header-searchbar,
+  .cnn_navbar-icons {
+    display: none;
+  }
+
+  .logo_container-nav {
+    height: 65px;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 60;
+    padding: 0 50px;
+  }
+
+  .cnn_header {
+    padding-top: 65px;
+  }
+
+  .cnn_menu-togger {
+    display: flex;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .cnn_icon-set {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .cnn_collapsable-logo {
+    margin-left: -50px;
+    transform: translateX(50%);
+  }
+
+  .cnn_header-nav_container {
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    top: 0;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 100;
+    transition: all 0.3s ease-in;
+  }
+
+  .menu_active {
+    box-shadow: 0 0 10px 4px rgb(0 0 0 / 20%);
+    left: 0;
+  }
+
+  .cnn_navbar-list {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .cnn_navbar-list li {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .cnn_navbar-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .cnn_navbar-list li.with_sublinks:not(.sublinks-gather li) a::after {
+    content: "+";
+    position: absolute;
+    right: 15px;
+    font-size: 16px;
+  }
+
+  .navbar_sublinks {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    padding: 0 15px;
+    display: block;
+  }
+
+  .cnn_navbar-list li.with_sublinks:hover .navbar_sublinks {
+    color: #cccccc;
+    height: auto;
+  }
+
+  .navbar_sublinks .sublinks-gather li:first-child {
+    width: 100%;
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+
+  .hero_intro-cont h1 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo_container-nav {
+    padding: 0 20px;
+  }
+
+  .cnn_hero-intro {
+    padding: 20px 0;
+  }
+
+  .cnn_collapsable-logo {
+    width: 100px;
+  }
+}
