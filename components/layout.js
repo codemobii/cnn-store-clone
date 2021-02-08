@@ -5,7 +5,7 @@ import Header from "./header";
 
 export default function Layout({
   children,
-  title = "CNN STORE",
+  title = "web STORE",
   isHome = false,
 }) {
   return (

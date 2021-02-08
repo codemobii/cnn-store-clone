@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="cnn_footer-container">
-      <div className="cnn_major-container">
-        <div className="cnn_footer-items">
+    <footer className="web_footer-container">
+      <div className="web_major-container">
+        <div className="web_footer-items">
           <div className="footer_item-one">
             <div className="footer_item-title">Sign up &amp; get 10% off</div>
-            <div className="cnn_sub-form">
+            <div className="web_sub-form">
               <input type="email" placeholder="Email" />
               <button className="sub_form-btn">Sign up</button>
             </div>
@@ -105,12 +105,12 @@ export default function Footer() {
             <a href="#" className="footer_link-bold">
               Learn More
             </a>
-            <div className="cnn_authority">
+            <div className="web_authority">
               <p className="footer_text">Powered by:</p>
               <img
                 src="https://shops1.stackassets.com/assets/core/logo-light-be04c77da6de1475cb2c1c82cf75120f338265aa36dfd6ed8a6404a720c28431.svg"
                 alt=""
-                className="cnn_footer-img"
+                className="web_footer-img"
               />
               <p className="footer_text">
                 Copyright © 2021 StackCommerce. All Rights Reserved.
@@ -118,7 +118,7 @@ export default function Footer() {
               <img
                 src="https://seal-sanjose.bbb.org/logo/sehzbus/stackcommerce-1013267.png"
                 alt=""
-                className="cnn_auto-img"
+                className="web_auto-img"
               />
             </div>
           </div>
